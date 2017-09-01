@@ -1,12 +1,12 @@
 {
-  "uid" : "7d654f5420dcaace",
-  "name" : "test_add_group[None:name; header3vT :Y# Agyh,N\\[; footer]2Q]",
-  "fullName" : "test.test_add_group.test_add_group[None:name; header3vT :Y# Agyh,N\\[; footer]2Q]",
-  "historyId" : "4646f18a25b179d74322fc23ac2d7c98",
+  "uid" : "cffa0520ee3a08ab",
+  "name" : "test_all_contacts_at_home_page_with_db",
+  "fullName" : "test.test_contact_info.test_all_contacts_at_home_page_with_db",
+  "historyId" : "432394ea5544b9bfead9d337256b12cb",
   "time" : {
-    "start" : 1504223089898,
-    "stop" : 1504223097300,
-    "duration" : 7402
+    "start" : 1504230248458,
+    "stop" : 1504230248695,
+    "duration" : 237
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -24,19 +24,19 @@
     "value" : "normal"
   }, {
     "name" : "thread",
-    "value" : "9016-MainThread"
+    "value" : "22516-MainThread"
   }, {
     "name" : "suite",
-    "value" : "test.test_add_group"
+    "value" : "test.test_contact_info"
   }, {
     "name" : "testClass",
-    "value" : "test.test_add_group"
+    "value" : "test.test_contact_info"
   }, {
     "name" : "testMethod",
-    "value" : "test_add_group[None:name; header3vT :Y# Agyh,N\\[; footer]2Q]"
+    "value" : "test_all_contacts_at_home_page_with_db"
   }, {
     "name" : "package",
-    "value" : "test.test_add_group"
+    "value" : "test.test_contact_info"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -50,7 +50,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "7d654f5420dcaace.json",
+  "source" : "cffa0520ee3a08ab.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

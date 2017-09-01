@@ -1,0 +1,89 @@
+Started by user admin
+Building in workspace C:\Jenkins\workspace\addressbook_allure
+ > c:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > c:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/lyudmill/python_training # timeout=10
+Fetching upstream changes from https://github.com/lyudmill/python_training
+ > c:\Program Files\Git\bin\git.exe --version # timeout=10
+ > c:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/lyudmill/python_training +refs/heads/*:refs/remotes/origin/*
+ > c:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > c:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision e73ca1f505f97ff0dd50ce608aafcba92d0662e2 (refs/remotes/origin/master)
+Commit message: "Add allure steps"
+ > c:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > c:\Program Files\Git\bin\git.exe checkout -f e73ca1f505f97ff0dd50ce608aafcba92d0662e2
+ > c:\Program Files\Git\bin\git.exe rev-list e73ca1f505f97ff0dd50ce608aafcba92d0662e2 # timeout=10
+[addressbook_allure] $ cmd.exe /c call C:\Windows\TEMP\shiningpanda2861881787020433618.bat
+
+C:\Jenkins\workspace\addressbook_allure>pip install -r requirements.txt 
+Processing c:\devel\tools\python\selenium-2.53.2
+  Requirement already satisfied (use --upgrade to upgrade): selenium==2.53.2 from file:///C:/Devel/Tools/python/selenium-2.53.2 in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 3))
+Requirement already satisfied: pytest==2.9.1 in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied: pytest_bdd in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 2))
+Requirement already satisfied: pony in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 4))
+Requirement already satisfied: pymysql in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 5))
+Requirement already satisfied: mysql-connector-python-rf in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 6))
+Requirement already satisfied: jsonpickle in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 7))
+Requirement already satisfied: pytest-allure-adaptor in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 8))
+Requirement already satisfied: py>=1.4.29 in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from pytest==2.9.1->-r requirements.txt (line 1))
+Requirement already satisfied: colorama; sys_platform == "win32" in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from pytest==2.9.1->-r requirements.txt (line 1))
+Requirement already satisfied: glob2 in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: parse in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: Mako in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: parse-type in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: six>=1.9.0 in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: namedlist in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from pytest-allure-adaptor->-r requirements.txt (line 8))
+Requirement already satisfied: lxml>=3.2.0 in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from pytest-allure-adaptor->-r requirements.txt (line 8))
+Requirement already satisfied: MarkupSafe>=0.9.2 in c:\jenkins\shiningpanda\jobs\d8597da4\virtualenvs\d41d8cd9\lib\site-packages (from Mako->pytest_bdd->-r requirements.txt (line 2))
+Building wheels for collected packages: selenium
+  Running setup.py bdist_wheel for selenium: started
+  Running setup.py bdist_wheel for selenium: finished with status 'done'
+  Stored in directory: C:\Windows\system32\config\systemprofile\AppData\Local\pip\Cache\wheels\94\e4\80\15541e5ae9049338ade315d20d41c2a569ef1a5bb6a5790586
+Successfully built selenium
+
+C:\Jenkins\workspace\addressbook_allure>py.test --alluredir allure-results1 test\test_add_group.py 
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-2.9.1, py-1.4.34, pluggy-0.3.1
+rootdir: C:\Jenkins\workspace\addressbook_allure, inifile: 
+plugins: bdd-2.18.2, allure-adaptor-1.7.8
+collected 6 items
+
+test\test_add_group.py ......
+
+========================== 6 passed in 60.40 seconds ==========================
+
+C:\Jenkins\workspace\addressbook_allure>py.test --alluredir allure-results2 test\test_del_group.py 
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-2.9.1, py-1.4.34, pluggy-0.3.1
+rootdir: C:\Jenkins\workspace\addressbook_allure, inifile: 
+plugins: bdd-2.18.2, allure-adaptor-1.7.8
+collected 1 items
+
+test\test_del_group.py .
+
+========================== 1 passed in 22.64 seconds ==========================
+
+C:\Jenkins\workspace\addressbook_allure>py.test --alluredir allure-results3 test\test_modify_group.py 
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-2.9.1, py-1.4.34, pluggy-0.3.1
+rootdir: C:\Jenkins\workspace\addressbook_allure, inifile: 
+plugins: bdd-2.18.2, allure-adaptor-1.7.8
+collected 4 items
+
+test\test_modify_group.py ....
+
+========================== 4 passed in 43.75 seconds ==========================
+C:\Jenkins\workspace\addressbook_allure>py.test --alluredir allure-results4 test\test_contact_info.py 
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-2.9.1, py-1.4.34, pluggy-0.3.1
+rootdir: C:\Jenkins\workspace\addressbook_allure, inifile: 
+plugins: bdd-2.18.2, allure-adaptor-1.7.8
+collected 3 items
+
+test\test_contact_info.py ...
+
+========================== 3 passed in 29.00 seconds ==========================
+
+C:\Jenkins\workspace\addressbook_allure>C:\Devel\Tools\Allure\allure-2.3.4\bin\allure.bat generate --clean allure-results1 allure-results2 allure-results3 allure-results4 
+Report successfully generated to allure-report
+Finished: SUCCESS

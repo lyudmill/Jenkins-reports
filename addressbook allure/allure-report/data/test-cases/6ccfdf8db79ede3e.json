@@ -1,0 +1,77 @@
+{
+  "uid" : "6ccfdf8db79ede3e",
+  "name" : "test_all_contacts_at_home_page_with_ormdb",
+  "fullName" : "test.test_contact_info.test_all_contacts_at_home_page_with_ormdb",
+  "historyId" : "7cff6fc57e5cab5f6095e46cf749c66f",
+  "time" : {
+    "start" : 1504230224569,
+    "stop" : 1504230248454,
+    "duration" : 23885
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "f1a2745feb6520cc",
+      "name" : "Captured stdout call",
+      "source" : "f1a2745feb6520cc.txt",
+      "type" : "text/plain",
+      "size" : 422
+    } ],
+    "parameters" : [ ],
+    "hasContent" : true,
+    "stepsCount" : 0,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "Pantera"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "22516-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test.test_contact_info"
+  }, {
+    "name" : "testClass",
+    "value" : "test.test_contact_info"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_all_contacts_at_home_page_with_ormdb"
+  }, {
+    "name" : "package",
+    "value" : "test.test_contact_info"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "6ccfdf8db79ede3e.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

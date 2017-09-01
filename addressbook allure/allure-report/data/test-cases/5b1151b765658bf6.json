@@ -1,12 +1,12 @@
 {
-  "uid" : "b83714545254c35e",
-  "name" : "test_add_group[None:name>LoEm;.4; header70T 5`; footerY)5~q9m0OMJiw  Y]",
-  "fullName" : "test.test_add_group.test_add_group[None:name>LoEm;.4; header70T 5`; footerY)5~q9m0OMJiw  Y]",
-  "historyId" : "38ac8813d85d831ebd1577be44734bc8",
+  "uid" : "5b1151b765658bf6",
+  "name" : "test_modify_group[None:mod_nameQ&% s@; mod_header   Q|sm% Fk\"Yi2  @v; mod_footerF ;9m]",
+  "fullName" : "test.test_modify_group.test_modify_group[None:mod_nameQ&% s@; mod_header   Q|sm% Fk\"Yi2  @v; mod_footerF ;9m]",
+  "historyId" : "676cd78224657fea6e2dc142926c0ee4",
   "time" : {
-    "start" : 1504223067828,
-    "stop" : 1504223075009,
-    "duration" : 7181
+    "start" : 1504230206389,
+    "stop" : 1504230214253,
+    "duration" : 7864
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -24,19 +24,19 @@
     "value" : "normal"
   }, {
     "name" : "thread",
-    "value" : "9016-MainThread"
+    "value" : "15112-MainThread"
   }, {
     "name" : "suite",
-    "value" : "test.test_add_group"
+    "value" : "test.test_modify_group"
   }, {
     "name" : "testClass",
-    "value" : "test.test_add_group"
+    "value" : "test.test_modify_group"
   }, {
     "name" : "testMethod",
-    "value" : "test_add_group[None:name>LoEm;.4; header70T 5`; footerY)5~q9m0OMJiw  Y]"
+    "value" : "test_modify_group[None:mod_nameQ&% s@; mod_header   Q|sm% Fk\"Yi2  @v; mod_footerF ;9m]"
   }, {
     "name" : "package",
-    "value" : "test.test_add_group"
+    "value" : "test.test_modify_group"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -50,7 +50,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "b83714545254c35e.json",
+  "source" : "5b1151b765658bf6.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },

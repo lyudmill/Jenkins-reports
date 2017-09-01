@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.5.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>https://github.com/lyudmill/python_training</url>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <jenkins.plugins.shiningpanda.builders.VirtualenvBuilder plugin="shiningpanda@0.23">
+      <pythonName>CPython-3.6</pythonName>
+      <home></home>
+      <clear>false</clear>
+      <systemSitePackages>false</systemSitePackages>
+      <nature>shell</nature>
+      <command>pip install -r requirements.txt
+py.test --alluredir allure-results1 test\test_add_group.py
+py.test --alluredir allure-results2 test\test_del_group.py
+py.test --alluredir allure-results3 test\test_modify_group.py
+py.test --alluredir allure-results4 test\test_contact_info.py
+C:\Devel\Tools\Allure\allure-2.3.4\bin\allure.bat generate --clean allure-results1 allure-results2 allure-results3 allure-results4</command>
+      <ignoreExitCode>false</ignoreExitCode>
+    </jenkins.plugins.shiningpanda.builders.VirtualenvBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

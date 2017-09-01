@@ -6,22 +6,22 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 6
+      "total" : 14
     },
     "time" : {
-      "start" : 1504223035351,
-      "stop" : 1504223097300,
-      "duration" : 61949,
-      "minDuration" : 6939,
-      "maxDuration" : 23801,
-      "sumDuration" : 61947
+      "start" : 1504230086957,
+      "stop" : 1504230250801,
+      "duration" : 163844,
+      "minDuration" : 237,
+      "maxDuration" : 24825,
+      "sumDuration" : 158950
     }
   },
   "environment" : [ ],
   "suites" : {
-    "total" : 1,
+    "total" : 4,
     "items" : [ {
       "uid" : "b7475d64bb5eb52f9c573061532bc2c5",
       "name" : "test.test_add_group",
@@ -33,6 +33,39 @@
         "unknown" : 0,
         "total" : 6
       }
+    }, {
+      "uid" : "86d45e4e89f5c3f72ca2534de35df0f8",
+      "name" : "test.test_modify_group",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 4,
+        "unknown" : 0,
+        "total" : 4
+      }
+    }, {
+      "uid" : "725940c513ed586cf2d6bf7964752553",
+      "name" : "test.test_contact_info",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 3
+      }
+    }, {
+      "uid" : "4f4848522abefeb5052b33b3258dc9d0",
+      "name" : "test.test_del_group",
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 0,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 1
+      }
     } ]
   },
   "history-trend" : [ {
@@ -40,13 +73,13 @@
       "failed" : 0,
       "broken" : 0,
       "skipped" : 0,
-      "passed" : 6,
+      "passed" : 14,
       "unknown" : 0,
-      "total" : 6
+      "total" : 14
     }
   } ],
   "behaviors" : {
-    "total" : 6,
+    "total" : 14,
     "items" : [ ]
   },
   "executors" : [ ],

@@ -1,0 +1,7 @@
+GET CONNECTION FROM THE LOCAL POOL
+SELECT `c`.`id`, `c`.`firstname`, `c`.`lastname`, `c`.`deprecated`, `c`.`middlename`, `c`.`nickname`, `c`.`title`, `c`.`company`, `c`.`address`, `c`.`home`, `c`.`mobile`, `c`.`work`, `c`.`fax`, `c`.`email`, `c`.`email2`, `c`.`email3`, `c`.`byear`, `c`.`homepage`, `c`.`address2`, `c`.`phone2`, `c`.`notes`
+FROM `addressbook` `c`
+WHERE `c`.`deprecated` IS NULL
+
+COMMIT
+RELEASE CONNECTION

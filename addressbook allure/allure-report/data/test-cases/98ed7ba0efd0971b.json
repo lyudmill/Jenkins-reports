@@ -1,12 +1,12 @@
 {
-  "uid" : "58787b553667ddf4",
-  "name" : "test_add_group[None:nameio; header~60r; footer3= D[mC2w~(]",
-  "fullName" : "test.test_add_group.test_add_group[None:nameio; header~60r; footer3= D[mC2w~(]",
-  "historyId" : "ee6f0ff5b1827cf528bf8cce7c07701f",
+  "uid" : "98ed7ba0efd0971b",
+  "name" : "test_modify_group[None:mod_name$bMN; mod_header2:Usj.2; mod_footerJbN>~p0l@]",
+  "fullName" : "test.test_modify_group.test_modify_group[None:mod_name$bMN; mod_header2:Usj.2; mod_footerJbN>~p0l@]",
+  "historyId" : "be4d9b11c14b06c8088e0e1f9b6a4e65",
   "time" : {
-    "start" : 1504223075010,
-    "stop" : 1504223081949,
-    "duration" : 6939
+    "start" : 1504230214254,
+    "stop" : 1504230222959,
+    "duration" : 8705
   },
   "description" : "",
   "descriptionHtml" : "",
@@ -24,19 +24,19 @@
     "value" : "normal"
   }, {
     "name" : "thread",
-    "value" : "9016-MainThread"
+    "value" : "15112-MainThread"
   }, {
     "name" : "suite",
-    "value" : "test.test_add_group"
+    "value" : "test.test_modify_group"
   }, {
     "name" : "testClass",
-    "value" : "test.test_add_group"
+    "value" : "test.test_modify_group"
   }, {
     "name" : "testMethod",
-    "value" : "test_add_group[None:nameio; header~60r; footer3= D[mC2w~(]"
+    "value" : "test_modify_group[None:mod_name$bMN; mod_header2:Usj.2; mod_footerJbN>~p0l@]"
   }, {
     "name" : "package",
-    "value" : "test.test_add_group"
+    "value" : "test.test_modify_group"
   }, {
     "name" : "resultFormat",
     "value" : "allure1"
@@ -50,7 +50,7 @@
     "categories" : [ ],
     "tags" : [ ]
   },
-  "source" : "58787b553667ddf4.json",
+  "source" : "98ed7ba0efd0971b.json",
   "statusDetailsSafe" : {
     "flaky" : false
   },
