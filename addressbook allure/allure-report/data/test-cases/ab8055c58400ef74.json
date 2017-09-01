@@ -1,0 +1,61 @@
+{
+  "uid" : "ab8055c58400ef74",
+  "name" : "test_add_group[None:; ; ]",
+  "fullName" : "test.test_add_group.test_add_group[None:; ; ]",
+  "historyId" : "705d6e0d3e51ba18b0053d205cae1ac8",
+  "time" : {
+    "start" : 1504223035351,
+    "stop" : 1504223059152,
+    "duration" : 23801
+  },
+  "description" : "",
+  "descriptionHtml" : "",
+  "status" : "passed",
+  "statusDetails" : {
+    "flaky" : false
+  },
+  "beforeStages" : [ ],
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "host",
+    "value" : "Pantera"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "thread",
+    "value" : "9016-MainThread"
+  }, {
+    "name" : "suite",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "testClass",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "testMethod",
+    "value" : "test_add_group[None:; ; ]"
+  }, {
+    "name" : "package",
+    "value" : "test.test_add_group"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure1"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "ab8055c58400ef74.json",
+  "statusDetailsSafe" : {
+    "flaky" : false
+  },
+  "statusMessage" : {
+    "present" : false
+  },
+  "parameterValues" : [ ]
+}

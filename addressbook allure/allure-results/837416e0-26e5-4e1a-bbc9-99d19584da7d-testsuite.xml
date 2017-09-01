@@ -1,0 +1,66 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1504223035351" stop="1504223097300">
+  <name>test.test_add_group</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1504223035351" status="passed" stop="1504223059152">
+      <name>test_add_group[None:; ; ]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9016-MainThread"/>
+        <label name="host" value="Pantera"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1504223059153" status="passed" stop="1504223067828">
+      <name>test_add_group[None:name_qw *s; header4; footerGUPnI%,Zm(E{m]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9016-MainThread"/>
+        <label name="host" value="Pantera"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1504223067828" status="passed" stop="1504223075009">
+      <name>test_add_group[None:name&gt;LoEm;.4; header70T 5`; footerY)5~q9m0OMJiw  Y]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9016-MainThread"/>
+        <label name="host" value="Pantera"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1504223075010" status="passed" stop="1504223081949">
+      <name>test_add_group[None:nameio; header~60r; footer3= D[mC2w~(]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9016-MainThread"/>
+        <label name="host" value="Pantera"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1504223081949" status="passed" stop="1504223089898">
+      <name>test_add_group[None:name_U &gt;; header8}p -; footerBxwpU\.&amp;]t=@Ps 0JbI]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9016-MainThread"/>
+        <label name="host" value="Pantera"/>
+      </labels>
+      <steps/>
+    </test-case>
+    <test-case start="1504223089898" status="passed" stop="1504223097300">
+      <name>test_add_group[None:name; header3vT :Y# Agyh,N\[; footer]2Q]</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="9016-MainThread"/>
+        <label name="host" value="Pantera"/>
+      </labels>
+      <steps/>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
