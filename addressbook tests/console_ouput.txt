@@ -1,0 +1,95 @@
+Started by user admin
+Building in workspace C:\Jenkins\workspace\addressbook tests
+ > c:\Program Files\Git\bin\git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > c:\Program Files\Git\bin\git.exe config remote.origin.url https://github.com/lyudmill/python_training # timeout=10
+Fetching upstream changes from https://github.com/lyudmill/python_training
+ > c:\Program Files\Git\bin\git.exe --version # timeout=10
+ > c:\Program Files\Git\bin\git.exe fetch --tags --progress https://github.com/lyudmill/python_training +refs/heads/*:refs/remotes/origin/*
+ > c:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > c:\Program Files\Git\bin\git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 6de618ed1edf4e937886233da702e8100fa43e36 (refs/remotes/origin/master)
+Commit message: "new version"
+ > c:\Program Files\Git\bin\git.exe config core.sparsecheckout # timeout=10
+ > c:\Program Files\Git\bin\git.exe checkout -f 6de618ed1edf4e937886233da702e8100fa43e36
+ > c:\Program Files\Git\bin\git.exe rev-list 6de618ed1edf4e937886233da702e8100fa43e36 # timeout=10
+[addressbook tests] $ cmd.exe /c call C:\Windows\TEMP\shiningpanda5496782322109360296.bat
+
+C:\Jenkins\workspace\addressbook tests>pip install -r requirements.txt 
+Processing c:\devel\tools\python\selenium-2.53.2
+  Requirement already satisfied (use --upgrade to upgrade): selenium==2.53.2 from file:///C:/Devel/Tools/python/selenium-2.53.2 in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 3))
+Requirement already satisfied: pytest==2.9.1 in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 1))
+Requirement already satisfied: pytest_bdd in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 2))
+Requirement already satisfied: pony in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 4))
+Requirement already satisfied: pymysql in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 5))
+Requirement already satisfied: mysql-connector-python-rf in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 6))
+Requirement already satisfied: jsonpickle in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from -r requirements.txt (line 7))
+Requirement already satisfied: colorama; sys_platform == "win32" in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from pytest==2.9.1->-r requirements.txt (line 1))
+Requirement already satisfied: py>=1.4.29 in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from pytest==2.9.1->-r requirements.txt (line 1))
+Requirement already satisfied: Mako in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: glob2 in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: six>=1.9.0 in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: parse in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: parse-type in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from pytest_bdd->-r requirements.txt (line 2))
+Requirement already satisfied: MarkupSafe>=0.9.2 in c:\jenkins\shiningpanda\jobs\62ae2d4d\virtualenvs\d41d8cd9\lib\site-packages (from Mako->pytest_bdd->-r requirements.txt (line 2))
+Building wheels for collected packages: selenium
+  Running setup.py bdist_wheel for selenium: started
+  Running setup.py bdist_wheel for selenium: finished with status 'done'
+  Stored in directory: C:\Windows\system32\config\systemprofile\AppData\Local\pip\Cache\wheels\94\e4\80\15541e5ae9049338ade315d20d41c2a569ef1a5bb6a5790586
+Successfully built selenium
+
+C:\Jenkins\workspace\addressbook tests>py.test test\test_add_group.py 
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-2.9.1, py-1.4.34, pluggy-0.3.1
+rootdir: C:\Jenkins\workspace\addressbook tests\test, inifile: 
+plugins: bdd-2.18.2
+collected 6 items
+
+test\test_add_group.py ......
+
+========================== 6 passed in 65.15 seconds ==========================
+
+C:\Jenkins\workspace\addressbook tests>py.test test\test_delete_group.py 
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-2.9.1, py-1.4.34, pluggy-0.3.1
+rootdir: C:\Jenkins\workspace\addressbook tests\test, inifile: 
+plugins: bdd-2.18.2
+
+======================== no tests ran in 0.00 seconds =========================
+ERROR: file not found: test\test_delete_group.py
+
+C:\Jenkins\workspace\addressbook tests>py.test test\test_modify_group.py 
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-2.9.1, py-1.4.34, pluggy-0.3.1
+rootdir: C:\Jenkins\workspace\addressbook tests\test, inifile: 
+plugins: bdd-2.18.2
+collected 4 items
+
+test\test_modify_group.py ....
+
+========================== 4 passed in 50.78 seconds ==========================
+
+C:\Jenkins\workspace\addressbook tests>py.test test\test_contact_info.py 
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-2.9.1, py-1.4.34, pluggy-0.3.1
+rootdir: C:\Jenkins\workspace\addressbook tests\test, inifile: 
+plugins: bdd-2.18.2
+collected 3 items
+
+test\test_contact_info.py ...
+
+========================== 3 passed in 30.50 seconds ==========================
+
+C:\Jenkins\workspace\addressbook tests>py.test bdd\group_scenarios.py 
+============================= test session starts =============================
+platform win32 -- Python 3.6.1, pytest-2.9.1, py-1.4.34, pluggy-0.3.1
+rootdir: C:\Jenkins\workspace\addressbook tests\bdd, inifile: 
+plugins: bdd-2.18.2
+collected 2 items
+
+bdd\group_scenarios.py ..
+
+========================== 2 passed in 32.69 seconds ==========================
+
+C:\Jenkins\workspace\addressbook tests>exit 0 
+Finished: SUCCESS
